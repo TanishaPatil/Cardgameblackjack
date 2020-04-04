@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="blackjack.js"></script>
+    </head>
+    <body>
+        <h1 style="font-size: 45px; text-shadow: 3px 2px grey;">Blackjack</h1>  
+        <div class="current-bet">
+            <div id="currency"></div>
+            <div id="bet"></div> 
+        </div>
+        <div id="actions">
+            <button id="deal" class="btn" onclick="deal()">Deal!</button>
+            <button id="hit" class="btn" disabled onclick="hit()">Hit</button>
+            <button id="stand" class="btn" disabled onclick="stand()">Stand</button>
+            <button id="double" class="btn" disabled onclick="double()">Double Down</button>
+            <strong style="font-size: 20px;">Wager:</strong> $<input id="wager" type="number" />
+        </div>
+        <h2 id="dhand">Dealer Hand</h2>
+        <div id="dealer-hand-value"></div>
+        <div id="dealer-hand"></div>
+        <h2 id="phand">Player Hand</h2>
+        <div id="player-hand-value"></div>
+        <div id="player-hand"></div>
+    </body>
+</html>
